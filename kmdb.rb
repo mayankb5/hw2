@@ -70,8 +70,18 @@
 # Use `Model.destroy_all` code.
 # TODO!
 
+movie.destroy_all
+person.destroy_all
+role. destroy_all
+
 # Generate models and tables, according to the domain model
 # TODO!
+
+rails generate model movies
+rails generate model people
+rails generate model roles
+
+
 
 # Insert data into your database that reflects the sample data shown above
 # Do not use hard-coded foreign key IDs.
