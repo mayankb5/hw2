@@ -199,6 +199,7 @@ puts ""
 # TODO!
 
 for role in Role.all
-    puts role.name
-
-#end
+    movie = Movie.where({id: role.movie_id})[0]
+    person = Person.where({id: role.person_id})[0]
+    puts "#{movie.title} #{person.name} #{role.character_name}"
+end
